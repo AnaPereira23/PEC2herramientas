@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Concurso de cocina</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+  <main class="poster">
+      <h1>Sabores del Pueblo: Concurso de cocina</h1>
+
+    <div class="poster_text">
+      <p>¿Tienes lo necesario para cautivar nuestros paladares con tus habilidades culinarias? Únete al emocionante concurso de cocina "Sabores del Pueblo" y muestra al mundo tus talentos gastronómicos.</p>
+      <ul>
+          <li>¡Crea platos únicos inspirados en la tradición y la creatividad!</li>
+          <li>Comparte tus recetas y técnicas con la comunidad culinaria local.</li>
+          <li>Gana emocionantes premios y diviértete con tus vecinos.</li>
+      </ul>
+      <p>¡No te pierdas la oportunidad de ser parte de este festín culinario! <a href="inscription.html">Inscríbete ahora clicando aquí</a> y prepárate para sorprender con tus creaciones culinarias.</p>
+    </div>
+
+    <img id="poster_image1"
+    srcset="assets/images/cocineros.jpg 300w, assets/images/cocineros.jpg 1200w"
+    sizes="(max-width: 600px) 300px, 1200px"
+    src="assets/images/cocineros.jpg"
+    loading="lazy"
+    alt="Personas cocinando paella en el pueblo"/>
+    
+    <img id="poster_image2"
+    srcset="assets/images/sarten.jpg 300w, assets/images/sarten.jpg 1200w"
+    sizes="(max-width: 600px) 300px, 1200px"
+    src="assets/images/sarten.jpg"
+    loading="lazy"
+    alt="Sartén con fuego"/>
+
+    <div class="poster_date">
+      <ul>
+          <li>Fecha: 15 junio</li>
+          <li>Hora: 14h30</li>
+          <li>Local: Plaza</li>
+      </ul>
+    </div>
+  </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

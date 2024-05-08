@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Artículo sobre el concurso de cocina</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+  <main>
+    <article>
+        <img 
+        srcset="assets/images/senoracocinando.jpg 300w, assets/images/senoracocinando.jpg 1200w"
+        sizes="(max-width: 600px) 300px, 1200px"
+        src="assets/images/senoracocinando.jpg"
+        loading="lazy"
+        alt="Señora sirviendo su arroz en platos pequeños"/>
+    <blockquote>
+    <h1>¡Saborea la Emoción! Llega el Concurso de Cocina 'Sabores del Pueblo'</h1>
+      <p>por Maria Fernandez</p>
+      <div class="article_part1">
+        <p id="p1_article">En una explosión de sabor y creatividad culinaria, el esperado concurso de cocina "Sabores del Pueblo" está a punto de regresar para deleitar a los paladares locales con lo mejor de la gastronomía artesanal.</p>
+        <p id="p2_article">Desde los aromas tentadores que flotan en el aire hasta los sabores que hacen bailar a las papilas gustativas, este evento anual promete una experiencia inolvidable para los amantes de la cocina y los curiosos por igual. Con un menú que celebra la diversidad de sabores y técnicas culinarias, 'Sabores del Pueblo' invita a los participantes a explorar las tradiciones gastronómicas locales y a presentar platos que cautiven tanto el paladar como el corazón de nuestra comunidad.</p>
+      </div>
+      <h2>Destacamos:</h2>
+      <dl>
+        <dt>Variedad de Categorías</dt> 
+        <dd>Desde platos tradicionales hasta creaciones modernas, el concurso ofrece una amplia gama de categorías para que los participantes muestren su talento culinario.</dd>
+        
+        <dt>Jurado Expertos</dt> 
+        <dd>Un panel de jueces compuesto por expertos en gastronomía evaluará cada plato en base a su sabor, presentación y originalidad.</dd>
+        
+        <dt>Premios Codiciados</dt> 
+        <dd>Los ganadores no solo recibirán emocionantes premios, sino también podrán pasar un buen rato con toda la comunidad local.</dd>
+      </dl>
+      <p id="p3_article">Únete a nosotros en 'Sabores del Pueblo', donde la pasión por la cocina se une con la diversidad gastronómica local para crear una experiencia verdaderamente deliciosa y memorable.</p>
+      <p id="p4_article">En el corazón de este vibrante concurso gastronómico se encuentra una pasión compartida por la cocina, donde los participantes tienen la oportunidad de presentar sus platos más creativos y deliciosos. Desde recetas transmitidas por generaciones hasta innovadoras fusiones de sabores, cada plato cuenta una historia única y refleja la diversidad de nuestra comunidad.</p>
+    </blockquote>
+        <img id="eating"
+        srcset="assets/images/comiendo.jpg 300w, assets/images/comiendo.jpg 1200w"
+        sizes="(max-width: 600px) 300px, 1200px"
+        src="assets/images/comiendo.jpg"
+        loading="lazy"
+        alt="Personas cocinando paella en el pueblo"/>
+    </article>
+  </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

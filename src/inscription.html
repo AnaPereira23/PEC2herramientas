@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Formulario de inscripción</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+  <main>
+    <form action="submit.php" method="POST">
+        <p>Los campos señalados con * son obligatorios</p>
+
+        <p>
+        <label for="name">Nombre completo *</label>
+        <input type="text" id="name" name="user_name" required pattern="[A-Za-z-_']{2,64}">
+        </p>
+
+        <p>
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="user_email" required>
+        </p>
+
+        <p>
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" name="user_phone">
+        </p>
+
+        <p>
+        <label for="dish">Nombre del plato *</label>
+        <input type="text" id="dish" name="user_dish" required>
+        </p>
+
+        <p>
+        <label for="categoria">Categoría del plato *</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">Seleccione una opción</option>
+            <option value="entrante">Entrante</option>
+            <option value="plato_principal">Plato Principal</option>
+            <option value="postre">Postre</option>
+            <option value="otro">Otro</option>
+        </select>
+        </p>
+        <button type="submit">Enviar</button>
+    </form>
+  </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
